@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">launchModeTest</string>
+    <string name="standard">standard</string>
+    <string name="singleTop">singleTop</string>
+    <string name="singleTask">singleTask</string>
+    <string name="singleInstance">singleInstance</string>
+    <string name="go_B">go B</string>
+    <string name="go_A">go A</string>
+    <string name="go_C">go C</string>
+    <string name="this_A">this A</string>
+    <string name="this_B">this B</string>
+    <string name="this_C">this C</string>
+    <string name="back">back</string>
+    <string name="go_c">go C</string>
+    <string name="go_b">go B</string>
+    <string name="this_a">这是A</string>
+    <string name="this_b">这是B</string>
+    <string name="this_c">这是C</string>
+    <string name="go_a">go A</string>
+    <string name="activity_start_mode">Activity 启动模式选择</string>
+</resources>

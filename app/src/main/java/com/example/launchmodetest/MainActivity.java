@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
         btn_singleTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, A.class));
+                startActivity(new Intent(MainActivity.this, C.class));
             }
         });
         btn_singleTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, A.class));
+                startActivity(new Intent(MainActivity.this, E.class));
             }
         });
         btn_singleInstance.setOnClickListener(new View.OnClickListener() {

@@ -18,4 +18,10 @@
     <string name="this_c">这是C</string>
     <string name="go_a">go A</string>
     <string name="activity_start_mode">Activity 启动模式选择</string>
+    <string name="go_d">go D</string>
+    <string name="this_d">这是D</string>
+    <string name="this_e">这是E</string>
+    <string name="go_f">go F</string>
+    <string name="go_e">go E</string>
+    <string name="this_f">这是F</string>
 </resources>

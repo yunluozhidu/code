@@ -13,25 +13,25 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class C extends AppCompatActivity {
 
-    private Button btnGoA, btnGoB,btnBack;
+    private Button btnGoD,btnGoC,btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_c);
-        btnGoA = findViewById(R.id.btnGoA);
-        btnGoB = findViewById(R.id.btnGoB);
+        btnGoD = findViewById(R.id.btnGoD);
+        btnGoC = findViewById(R.id.btnGoC);
         btnBack = findViewById(R.id.btnBack);
-        btnGoA.setOnClickListener(new View.OnClickListener() {
+        btnGoC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(C.this, A.class));
+                startActivity(new Intent(C.this, C.class));
             }
         });
-        btnGoB.setOnClickListener(new View.OnClickListener() {
+        btnGoD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(C.this, B.class));
+                startActivity(new Intent(C.this, D.class));
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {

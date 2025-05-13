@@ -11,31 +11,34 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class A extends AppCompatActivity {
+public class E extends AppCompatActivity {
 
-    private Button btnGoB,btnBack, btnGoA;
-
+    private Button btnGoF,btnGoE,btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_a);
-        btnGoB = findViewById(R.id.btnGoB);
+        setContentView(R.layout.activity_e);
+        btnGoF = findViewById(R.id.btnGoF);
+        btnGoE = findViewById(R.id.btnGoE);
         btnBack = findViewById(R.id.btnBack);
-        btnGoA = findViewById(R.id.btnGoA);
-        btnGoA.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {startActivity(new Intent(A.this, A.class));}
-        });
-        btnGoB.setOnClickListener(new View.OnClickListener() {
+        btnGoE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(A.this, B.class));
+                startActivity(new Intent(E.this, E.class));
+            }
+        });
+        btnGoF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(E.this, F.class));
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {getOnBackPressedDispatcher().onBackPressed();}
+            public void onClick(View v) {
+                getOnBackPressedDispatcher().onBackPressed();
+            }
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

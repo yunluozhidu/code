@@ -24,4 +24,10 @@
     <string name="go_f">go F</string>
     <string name="go_e">go E</string>
     <string name="this_f">这是F</string>
+    <string name="this_g">这是G</string>
+    <string name="go_g">go G</string>
+    <string name="go_h">go H</string>
+    <string name="this_h">这是H</string>
+    <string name="go_i">go I</string>
+    <string name="this_i">这是I</string>
 </resources>

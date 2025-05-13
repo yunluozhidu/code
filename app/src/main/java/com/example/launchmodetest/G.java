@@ -2,6 +2,7 @@ package com.example.launchmodetest;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,40 +12,41 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class G extends AppCompatActivity {
 
-    private Button btn_standard,  btn_singleTop, btn_singleTask, btn_singleInstance;
+    private Button btnGoH,btnGoG,binGoI,btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("singleInstance","G Task id is "+getTaskId());
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        btn_standard = findViewById(R.id.btn_standard);
-        btn_singleTop = findViewById(R.id.btn_singleTop);
-        btn_singleTask = findViewById(R.id.btn_singleTask);
-        btn_singleInstance = findViewById(R.id.btn_singleInstance);
-        btn_standard.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_g);
+        btnGoH = findViewById(R.id.btnGoH);
+        btnGoG = findViewById(R.id.btnGoG);
+        binGoI = findViewById(R.id.btnGoI);
+        btnBack = findViewById(R.id.btnBack);
+        btnGoG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, A.class));
+                startActivity(new Intent(G.this, G.class));
             }
         });
-        btn_singleTop.setOnClickListener(new View.OnClickListener() {
+        btnGoH.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, C.class));
+                startActivity(new Intent(G.this, H.class));
             }
         });
-        btn_singleTask.setOnClickListener(new View.OnClickListener() {
+        binGoI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, E.class));
+                startActivity(new Intent(G.this, I.class));
             }
         });
-        btn_singleInstance.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, G.class));
+                getOnBackPressedDispatcher().onBackPressed();
             }
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
